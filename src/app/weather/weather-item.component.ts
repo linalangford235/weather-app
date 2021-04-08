@@ -1,15 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { WeatherItem } from './weather-item';
 
 @Component({
   selector: 'weather-item',
   template:`
   <article class="weather-element">
             <div class="col-1">
-                <h3>Cityname</h3>
-                <p class="info">CLOUDS</p>
+                <h3>{{weatherItem.cityName}}</h3>
+                <p class="info">{{weatherItem.description}}</p>
             </div>
             <div class="col-2">
-                <span class="temp">32°C</span>
+                <span class="temp">{{weatherItem.temperature}}°C</span>
             </div>
         </article>
         `,
@@ -18,5 +19,6 @@ import { Component } from '@angular/core';
 })
 
 export class  WeatherItemComponent {
-
+  @Input('item')
+  weatherItem!: WeatherItem;
 }
