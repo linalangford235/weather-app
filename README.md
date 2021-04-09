@@ -1,10 +1,11 @@
 # WeatherApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.8.
+This project was created with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.8.
 
 ## To start app
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Run `ng serve` for a dev server. 
+2. Navigate to `http://localhost:4200/` (The app will automatically reload if you change any of the source files.)
 
 ## Running unit tests
 
