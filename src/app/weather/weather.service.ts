@@ -1,10 +1,16 @@
 import { Injectable } from '@angular/core';
-import { WEATHER_ITEMS } from './weather.data';
+import { HttpClient } from '@angular/common/http';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class WeatherService {
 
-  getWeatherItems() {
-    return WEATHER_ITEMS;
+  constructor(private http: HttpClient) {}
+
+  getWeather(location: string){
+    return this.http.get(
+        'http://www.metaweather.com/api/location/search/?query=' + location
+    );
   }
 }

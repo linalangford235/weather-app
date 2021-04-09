@@ -72,7 +72,8 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "weather-app:build:production"
+              "browserTarget": "weather-app:build:production",
+              "proxyConfig": "src/proxy.json"
             }
           }
         },
