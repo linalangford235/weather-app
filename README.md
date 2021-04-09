@@ -4,8 +4,10 @@ This project was created with [Angular CLI](https://github.com/angular/angular-c
 
 ## To start app
 
-1. Run `ng serve` for a dev server. 
-2. Navigate to `http://localhost:4200/` (The app will automatically reload if you change any of the source files.)
+1. Clone repo
+2. Run command 'npm install' from root of project inside VS code terminal or cmd
+3. Run `ng serve`
+4. Navigate to `http://localhost:4200/` (The app will automatically reload if you change any of the source files.)
 
 ## Running unit tests
 
